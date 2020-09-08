@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rec_title_view"
+        android:lines="1"
+        android:maxWidth="300dp"
+        android:textSize="28sp"
+        android:text="@{viewmodel.noteTitle}"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rec_title_view"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:text="@{viewmodel.noteContent}"
+        android:textSize="24sp"
+        android:fontFamily="serif"
+        android:textColor="@color/gray"/>
+
+
+</RelativeLayout>
